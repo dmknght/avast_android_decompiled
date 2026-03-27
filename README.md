@@ -440,8 +440,11 @@ slot_idx=995  counter=1  threshold=1  would_promote=True  name_pool_id_if_promot
 ELF:MiraiDownloader-JM [Drp]
 ```
 
-But, how about scanning with Virustotal? File that has hash `a38c9e40fc1d22aeeb11cd6fbd34393665e487712a08f501dd228c1b81e2968a` is detected as `Avast-Mobile ELF:MiraiDownloader-JM [Drp]` (see:
+But, how about scanning with actual engine? I uploaded the test file to Virustotal. The file has hash `a38c9e40fc1d22aeeb11cd6fbd34393665e487712a08f501dd228c1b81e2968a` was detected as `Avast-Mobile ELF:MiraiDownloader-JM [Drp]` (see:
 `https://www.virustotal.com/gui/file/a38c9e40fc1d22aeeb11cd6fbd34393665e487712a08f501dd228c1b81e2968a?nocache=1`)
+
+<img width="1333" height="439" alt="image" src="https://github.com/user-attachments/assets/f1628c22-3efc-4bd6-87f0-ef0966a89579" />
+
 
 False positives are even worse. In tests I ran before writing this README, some samples were detected by multiple engines:
 
@@ -460,6 +463,9 @@ AVG ELF:Mirai-TO [Trj]
 Cynet Malicious (score: 99)
 ```
 
+<img width="1320" height="747" alt="image" src="https://github.com/user-attachments/assets/5fc2b6f8-9823-4f60-8bb6-a734e24484dc" />
+
+
 - Second one: `https://www.virustotal.com/gui/file/7c1dc658f510c4659d94c0257c129bb47dc0461f4bcb3dfecb1dbd86030cad61?nocache=1`
 
 ```
@@ -477,5 +483,7 @@ Google Detected
 Ikarus AVE.AndroidOS.Gafgyt
 WithSecure Malware.ANDROID/AVE.Gafgyt.ulkli
 ```
+
+<img width="1313" height="668" alt="image" src="https://github.com/user-attachments/assets/b5be1b6b-127f-4312-a9d5-b5ea7fbc4194" />
 
 
