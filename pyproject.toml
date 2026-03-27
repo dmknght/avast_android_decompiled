@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avast-py-simulate"
+version = "0.1.0"
+description = "Python simulator for Avast local kb10/e2p detection rules (DEX/ELFA)."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["avast_py_simulate"]
+py-modules = ["scanner", "rule_decompiler", "explain_rule"]
+
+[project.scripts]
+avast-rule-decompiler = "rule_decompiler:main"
+avast-file-scanner = "scanner:main"
+avast-rule-explainer = "explain_rule:main"
+
